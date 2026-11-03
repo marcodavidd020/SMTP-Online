@@ -1,0 +1,20 @@
+{
+  "name": "bandeja-en-vivo",
+  "version": "1.0.0",
+  "description": "Muestra en vivo los correos que llegan mientras la página está abierta (IMAP, solo lectura).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --env-file-if-exists=.env --watch server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^5.3.0",
+    "imapflow": "^2.10.0",
+    "mailparser": "^3.14.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}
